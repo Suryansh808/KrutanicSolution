@@ -1,9 +1,12 @@
 import React from 'react'
+import Header from './Components/Header/Header'
+import ShuffleHero from './Components/Hero/ShuffleHero'
 
 const App = () => {
   return (
     <div>
-      <h1>Krutanic</h1>
+       <Header/>
+        <ShuffleHero/>
     </div>
   )
 }
