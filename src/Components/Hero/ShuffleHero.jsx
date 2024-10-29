@@ -7,14 +7,27 @@ const ShuffleHero = () => {
 
     useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ['A Successfull Carrer In Tech','A Path Way to Tech Carrer.','The Skills To Land Your Dream Job.','Expert Profesional','Industry-Focused Skills'],
+        strings: [
+          'A Successful Career In Tech',
+          'A Path Way to Tech Career',
+          'The Skills To Land Your Dream Job.',
+          'Expert Professional',
+          'Industry-Focused Skills',
+          'Unlocking Opportunities in Tech',
+          'Essential Tools for Your Tech Journey',
+          'Navigating Your Career Path in Technology',
+          'Building a Future in Tech',
+          'Transform Your Passion into a Tech Career'
+        ],
         typeSpeed: 80,
-        loop:true, 
+        loop: true,
       });
+      
       return () => {
         typed.destroy();
       };
     }, []);
+    
 
   return (
     <section className="w-ful px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-10 ">
@@ -48,6 +61,7 @@ const shuffle = (array) => {
 
   return array;
 };
+
 
 const squareData = [
   {
