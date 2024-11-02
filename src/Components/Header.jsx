@@ -1,22 +1,38 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.jpg'
 
 const Header = () => {
   return (
-    <div className='bg-black text-white'>
-     <div className='flex items-center justify-between w-full px-10 py-3 '>
-        logo 
-        <div className='flex items-center flex-wrap gap-4 '>
-          <h1>Career</h1>
-          <h1>Events</h1>
+    <div id='header'>
+      <div className='upper'>
+        <ul>
+          <li>
+            <Link to="/">CAREER</Link>
+            <Link to="/">TALENT HUNT</Link>
+
+            <button><Link to="/">LOGIN</Link></button>
+          </li>
+        </ul>
+      </div>
+      <div className='lower'>
+        <div className='nav'>
+          <img src={logo} alt="Logo" />
+          <ul>
+            <li>
+              <Link to="/">MENTORSHIP PROGRAM</Link>
+              <Link to="/">ADVANCE PROGRAM</Link>
+              <Link to="/">FEE STRUCTURE</Link>
+              <Link to="/">ABOUT US</Link>
+              <Link to="/">COLLABRATION</Link>
+            </li>
+          </ul>
         </div>
-        <button>LogIn</button>
-     </div>
-     <nav className='flex items-center  flex-wrap justify-center gap-10 pb-3'>
-      <h1>Courses</h1>
-      <h1>Fees</h1>
-      <h1>About Us</h1>
-      <h1>Collebration</h1>
-     </nav>
+       
+
+      </div>
+
+
     </div>
   )
 }
