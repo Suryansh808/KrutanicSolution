@@ -8,7 +8,7 @@ const ShuffleHero = () => {
     useEffect(() => {
       const typed = new Typed(el.current, {
         strings: ['A Successfull Carrer In Tech','A Path Way to Tech Carrer.','The Skills To Land Your Dream Job.','Expert Profesional','Industry-Focused Skills'],
-        typeSpeed: 80,
+        typeSpeed: 120,
         loop:true, 
       });
       return () => {
@@ -22,9 +22,16 @@ const ShuffleHero = () => {
         <h1 style={{color:"rgb(241 91 41)"}} className="block mb-4 text-3xl font-medium">
          | Best Learning PLatForm
         </h1>
-        <p className="text-xl md:text-6xl font-semibold">
+        <p className="text-xl md:text-5xl font-semibold text-white">
           Transform Your Passion into  <span ref={el} style={{color:"rgb(241 91 41)"}} />
         </p>  
+        <br/>
+        <p className="text-white">At KRUTANIC, we believe in transforming passion into profession. Our expertly designed programming courses equip you with the skills to excel in the digital world. 
+        Join us and start your future.</p>
+        <br/>
+        <br/>
+        <button className="bg-white hover:text-orange-700 text-black font-bold 
+        py-2 px-4 rounded">EXPLORE NOW</button>
        
       </div>
       <ShuffleGrid />
@@ -121,11 +128,12 @@ const generateSquares = () => {
     <motion.div
       key={sq.id}
       layout
-      transition={{ duration: 1.5, type: "spring" }}
+      transition={{ duration: 4.5, type: "spring" }}
       className="w-full h-full"
       style={{
         backgroundImage: `url(${sq.src})`,
         backgroundSize: "cover",
+        
       }}
     ></motion.div>
   ));
@@ -144,7 +152,7 @@ const ShuffleGrid = () => {
   const shuffleSquares = () => {
     setSquares(generateSquares());
 
-    timeoutRef.current = setTimeout(shuffleSquares, 3000);
+    timeoutRef.current = setTimeout(shuffleSquares, 4000);
   };
 
   return (
