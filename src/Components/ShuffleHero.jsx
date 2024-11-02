@@ -19,7 +19,7 @@ const ShuffleHero = () => {
           'Building a Future in Tech',
           'Transform Your Passion into a Tech Career'
         ],
-        typeSpeed: 80,
+        typeSpeed: 110,
         loop: true,
       });
       
@@ -36,7 +36,7 @@ const ShuffleHero = () => {
          | Best Learning PLatForm
         </h1>
         <p className="text-xl md:text-5xl font-semibold text-white">
-          Transform Your Passion into  <span ref={el} style={{color:"rgb(241 91 41)"}} />
+          Transform Your Passion into <br />  <span className="text-md tracking-tighter" ref={el} style={{color:"rgb(241 91 41)"}} />
         </p>  
         <br/>
         <p className="text-white">At KRUTANIC, we believe in transforming passion into profession. Our expertly designed programming courses equip you with the skills to excel in the digital world. 
