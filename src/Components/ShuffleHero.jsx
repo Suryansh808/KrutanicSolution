@@ -7,14 +7,27 @@ const ShuffleHero = () => {
 
     useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ['A Successfull Carrer In Tech','A Path Way to Tech Carrer.','The Skills To Land Your Dream Job.','Expert Profesional','Industry-Focused Skills'],
-        typeSpeed: 120,
-        loop:true, 
+        strings: [
+          'A Successful Career In Tech',
+          'A Path Way to Tech Career',
+          'The Skills To Land Your Dream Job.',
+          'Expert Professional',
+          'Industry-Focused Skills',
+          'Unlocking Opportunities in Tech',
+          'Essential Tools for Your Tech Journey',
+          'Navigating Your Career Path in Technology',
+          'Building a Future in Tech',
+          'Transform Your Passion into a Tech Career'
+        ],
+        typeSpeed: 110,
+        loop: true,
       });
+      
       return () => {
         typed.destroy();
       };
     }, []);
+    
 
   return (
     <section className="w-ful px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-10 ">
@@ -23,7 +36,7 @@ const ShuffleHero = () => {
          | Best Learning PLatForm
         </h1>
         <p className="text-xl md:text-5xl font-semibold text-white">
-          Transform Your Passion into  <span ref={el} style={{color:"rgb(241 91 41)"}} />
+          Transform Your Passion into <br />  <span className="text-md tracking-tighter" ref={el} style={{color:"rgb(241 91 41)"}} />
         </p>  
         <br/>
         <p className="text-white">At KRUTANIC, we believe in transforming passion into profession. Our expertly designed programming courses equip you with the skills to excel in the digital world. 
@@ -55,6 +68,7 @@ const shuffle = (array) => {
 
   return array;
 };
+
 
 const squareData = [
   {
