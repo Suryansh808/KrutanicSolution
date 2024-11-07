@@ -4,6 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import './style/header.css'
 import './style/landingpage.css'
+import './style/DynamicFounder.css';
+// import './style/SliderComponent.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
