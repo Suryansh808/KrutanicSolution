@@ -11,6 +11,9 @@ import DisplayLectures from './Components/LMS/Admin/DisplayLecture';
 import AddCourseLecture from './Components/LMS/Admin/AddCourseLecture';
 import CreateCourse from './Components/LMS/Course/CreateCourse';
 import EditCourse from './Components/LMS/Course/EditCourse';
+import AboutUs from './page/AboutUs';
+import Footer from './Components/Footer';
+import ContactUs from './page/ContactUs';
 
 const App = () => {
   return (
@@ -19,6 +22,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/AboutUs" element={<AboutUs/>} />
+          <Route path="/ContactUs" element={<ContactUs/>} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/ForgotPassword" element={<ForgetPassword/>} />
@@ -38,6 +43,7 @@ const App = () => {
 
       
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

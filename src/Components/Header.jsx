@@ -4,15 +4,16 @@ import logo from '../assets/logo.jpg'
 
 const Header = () => {
   return (
-    <div id='header'>
+    <div id='header' className='border-b '>
       <div style={{ float: 'left' }}>
-        <img src={logo} alt="Logo" />
+       <Link to='/'><img src={logo} alt="Logo" /></Link>
       </div>
       <div>
         <ul className='upper'>
           <li>
             <Link to="/">TALENT HUNT</Link>
-            <button><Link to ="/Login"></Link>LOGIN</button>
+            {/* <Link to="/AboutUs">ABOUT US</Link> */}
+            <button><Link to="/login">LOGIN</Link></button>
           </li>
         </ul>
         <nav>
