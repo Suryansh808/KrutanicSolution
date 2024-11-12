@@ -61,9 +61,17 @@ const AboutUs = () => {
   </div>
 </div>
       <DynamicFounder />
+<<<<<<< HEAD
+      <ProfileCards />
+=======
       <ProfileCards/>
+>>>>>>> a6801828ee9f35e6aebe944720e0e3fc0879e807
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default AboutUs;
+=======
+export default AboutUs;
+>>>>>>> a6801828ee9f35e6aebe944720e0e3fc0879e807
