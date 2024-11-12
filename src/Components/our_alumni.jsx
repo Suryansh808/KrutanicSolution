@@ -6,9 +6,9 @@ import 'slick-carousel/slick/slick-theme.css';
 const ClientsCarousel = () => {
   const settings = {
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     slidesToShow: 8,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     dots: false,
     responsive: [
       {
@@ -79,6 +79,9 @@ const ClientsCarousel = () => {
               <img alt="client logo" className="client-img" src= "https://res.cloudinary.com/oralyildiz/image/upload/v1629776533/1_befu7u.png" />
             </div>
         </Slider>
+      </div>
+      <div className='ourmission'>
+
       </div>
     </div>
   );

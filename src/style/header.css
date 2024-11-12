@@ -23,6 +23,7 @@
         content: "";
         display: table;
         clear: both;
+        
     }
     
     nav ul {
@@ -68,6 +69,8 @@
     
     nav ul li:hover>ul {
         display: inherit;
+        transform: translateX(-50px);
+        animation: fadeInUp 0.5s forwards;
     }
     
     nav ul ul li {
@@ -131,6 +134,8 @@
     
         [id^=drop]:checked+ul {
             display: block;
+            transform: translateX(-100px);
+        animation: fadeInUp 0.5s forwards;
         }
     
         nav ul li {

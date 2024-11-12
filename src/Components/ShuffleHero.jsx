@@ -147,6 +147,7 @@ const generateSquares = () => {
       style={{
         backgroundImage: `url(${sq.src})`,
         backgroundSize: "cover",
+        borderRadius:"10px"
         
       }}
     ></motion.div>
