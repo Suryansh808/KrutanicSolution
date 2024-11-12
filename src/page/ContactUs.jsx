@@ -56,4 +56,8 @@ const ContactUs = () => {
   );
 };
 
+<<<<<<< HEAD
 export default ContactUs;
+=======
+export default ContactUs;
+>>>>>>> a6801828ee9f35e6aebe944720e0e3fc0879e807

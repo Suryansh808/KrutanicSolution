@@ -106,4 +106,8 @@ const DynamicFounder = () => {
   )
 }
 
+<<<<<<< HEAD
 export default DynamicFounder
+=======
+export default DynamicFounder
+>>>>>>> a6801828ee9f35e6aebe944720e0e3fc0879e807
