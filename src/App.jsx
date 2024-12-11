@@ -1,105 +1,76 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { Routes, Route } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 import Header from './Components/Header';
 import HomePage from './page/landing';
-
 import Signup from './page/Signup';
-<<<<<<< HEAD
-import ForgetPassword from './LMS/Password/ForgetPassword';
-import AdminLogin from './LMS/Admin/AdminLogin';
-import AdminDashboard from './LMS/Admin/AdminDashboard';
-import DisplayLectures from './LMS/Admin/DisplayLecture';
-import AddCourseLecture from './LMS/Admin/AddCourseLecture';
-import CreateCourse from './LMS/Course/CreateCourse';
-import EditCourse from './LMS/Course/EditCourse';
-import OppLogin from './LMS/Operation/OppLogin';
-import OppDashboard from './LMS/Operation/OppDashboard';
-import OppProfile from './LMS/Operation/OppProfile';
-import OppAppliedCandidate from './LMS/Operation/OppAppliedCandidate';
-import OppRejected from './LMS/Operation/OppRejected';
-import OppAccepted from './LMS/Operation/OppAccepted';
-import UserDashboard from './LMS/User/UserDashboard';
-import UserProfile from './LMS/User/UserProfile';
-import UserCourse from './LMS/User/UserCourse';
-import UserEnrolledCourse from './LMS/User/UserEnrolledCourse';
 import ContactUs from './page/ContactUs';
 import AboutUs from './page/AboutUs';
-
-
-
-
-
-=======
-import ForgetPassword from './Components/LMS/Password/ForgotPassword';
-import AdminLogin from './Components/LMS/Admin/AdminLogin';
-import AdminDashboard from './Components/LMS/Admin/AdminDashboard';
-import DisplayLectures from './Components/LMS/Admin/DisplayLecture';
-import AddCourseLecture from './Components/LMS/Admin/AddCourseLecture';
-import CreateCourse from './Components/LMS/Course/CreateCourse';
-import EditCourse from './Components/LMS/Course/EditCourse';
-import AboutUs from './page/AboutUs';
+import Login from './page/Login';
+import Collabration from './page/Collabration';
+import Career from './page/Career';
+import AdvanceCourses from './page/AdvanceCourses';
+import FeeStructure from './page/FeeStructure';
+import TalentHunt from './page/TalentHunt';
 import Footer from './Components/Footer';
-import ContactUs from './page/ContactUs';
->>>>>>> a6801828ee9f35e6aebe944720e0e3fc0879e807
+import LoginWithOtp from './page/LoginWithOtp';
+import ScrollToTop from './Components/ScrollToTop';
+import Advance from './page/Advance';
+import Mentorship from './page/Mentorship';
+import DataScience from './page/AdvanceCourse/DataScience';
+import DigitalMarket from "./page/AdvanceCourse/DigitalMarket";
+import MernStack from "./page/AdvanceCourse/MernStack";
+import Investmentbanking from "./page/AdvanceCourse/Investmentbanking";
+import ProductManagement from "./page/AdvanceCourse/ProductManagement";
+import SmoothScroll from './SmoothScroll';
+import MentorSection from './Components/MentorSection';
+import Performancemarket from './page/AdvanceCourse/Performancemarket';
+
+
+
+
+
+
+
+
 
 const App = () => {
+
+
   return (
-    <Router> 
+    <div>
+      <SmoothScroll/>
+      <HashRouter> 
       <div>
+        <ScrollToTop/>
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-<<<<<<< HEAD
-          <Route path="/login" element={<logIn />} />
-=======
-          <Route path="/AboutUs" element={<AboutUs/>} />
-          <Route path="/ContactUs" element={<ContactUs/>} />
-          <Route path="/login" element={<LogIn />} />
->>>>>>> a6801828ee9f35e6aebe944720e0e3fc0879e807
+          <Route path="/Login" element={<Login />} />
+          <Route path="/LoginWithOtp" element={<LoginWithOtp />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/AboutUs" element={<AboutUs/>} />
-    
-
-
-
-          <Route path="/ForgetPassword" element={<ForgetPassword/>} />
-          
-          
-          {/* admin routes  */}
-          <Route path="/AdminLogin" element={<AdminLogin/>} />
-          <Route path="/AdminDashboard" element={<AdminDashboard/>} />
-          <Route path="/DisplayLectures" element={<DisplayLectures/>} />
-          <Route path="/AddCourseLecture" element={<AddCourseLecture/>} />
-
-
-
-        {/* Course Routes */}
-        <Route path="/CreateCourse" element={<CreateCourse/>} />
-        <Route path="/EditCourse" element={<EditCourse/>} />
-   
-        {/* Operation */}
-        <Route path="/OppLogin" element={<OppLogin/>} />
-        <Route path="/OppDashboard" element={<OppDashboard/>} />
-        <Route path="/OppProfile" element={<OppProfile/>} />
-        <Route path="/OppAppliedCandidate" element={<OppAppliedCandidate/>} />
-        <Route path="/OppRejected" element={<OppRejected/>} />
-        <Route path="/OppAccepted" element={<OppAccepted/>} />
-      
-
-        {/* User Dashboard */}
-        <Route path="/UserDashboard" element={<UserDashboard/>} /> 
-        <Route path="/UserProfile" element={<UserProfile/>} /> 
-        <Route path="/UserCourse" element={<UserCourse/>} /> 
-        <Route path="/UserEnrolledCourse" element={<UserEnrolledCourse/>} /> 
-
-
-
-
+          <Route path="/Career" element={<Career/>} />
+          <Route path="/Collabration" element={<Collabration/>} />
+          <Route path="/AdvanceCourses" element={<AdvanceCourses/>} />
+          <Route path="/FeeStructure" element={<FeeStructure/>} />
+          <Route path="/TalentHunt" element={<TalentHunt/>} />
+          <Route path="/Advance" element={<Advance />} />
+          <Route path="/Mentorship" element={<Mentorship />} />
+          <Route path="/MentorSection" element={<MentorSection/>} />        
+          <Route path="/DataScience" element={<DataScience/>} />
+          <Route path="/DigitalMarket" element={<DigitalMarket />} />
+          <Route path="/Performancemarket" element={<Performancemarket />} />
+          <Route path="/MernStack" element={<MernStack />} />
+          <Route path="/Investmentbanking" element={<Investmentbanking />} />
+          <Route path="/ProductManagement" element={<ProductManagement />} />
         </Routes>
         <Footer/>
       </div>
-    </Router>
+    </HashRouter>
+    </div>
+ 
   );
 };
 

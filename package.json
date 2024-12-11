@@ -10,57 +10,33 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@reduxjs/toolkit": "^1.9.7",
     "@tailwindcss/line-clamp": "^0.4.4",
+    "aos": "^2.3.4",
     "axios": "^1.6.2",
     "chart.js": "^4.4.0",
     "cors": "^2.8.5",
     "dom": "^0.0.3",
     "framer-motion": "^11.11.11",
+    "gsap": "^3.12.5",
     "razorpay": "^2.9.5",
     "react": "^18.2.0",
-=======
-<<<<<<< HEAD
-
-    "chart.js": "^4.4.6",
-
-    "dom": "^0.0.3",
-
-=======
-    "chart.js": "^4.4.6",
-    "dom": "^0.0.3",
->>>>>>> c30ec51e54692b2816f387072d612a4b97b209c8
-    "framer-motion": "^11.11.9",
-    "react": "^18.3.1",
->>>>>>> a6801828ee9f35e6aebe944720e0e3fc0879e807
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+    "react-gsap": "^3.2.1",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.12.0",
     "react-owl-carousel": "^2.3.3",
-<<<<<<< HEAD
     "react-player": "^2.16.0",
     "react-redux": "^8.1.3",
-    "react-router-dom": "^6.19.0",
-    "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1",
-=======
     "react-router-dom": "^6.27.0",
-<<<<<<< HEAD
-
     "react-slick": "^0.30.2",
+    "router": "^2.0.0",
+    "sass": "^1.81.0",
     "slick-carousel": "^1.8.1",
-
-    "router": "^1.3.8",
-
-=======
-    "react-slick": "^0.30.2",
-    "router": "^1.3.8",
-    "slick-carousel": "^1.8.1",
->>>>>>> c30ec51e54692b2816f387072d612a4b97b209c8
+    "swiper": "^11.1.15",
+    "tsparticles": "^3.5.0",
     "typed-js": "^0.2.3",
->>>>>>> a6801828ee9f35e6aebe944720e0e3fc0879e807
     "typed.js": "^2.1.0"
   },
   "devDependencies": {
