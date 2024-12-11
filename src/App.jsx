@@ -44,7 +44,7 @@ const App = () => {
       <div>
         <ScrollToTop/>
         <Header />
-        <Routes>
+        <Routes basename="/KrutanicSolution">
           <Route path="/" element={<HomePage />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/LoginWithOtp" element={<LoginWithOtp />} />
